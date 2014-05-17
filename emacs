@@ -21,6 +21,7 @@
 (global-set-key (kbd "C-, d") 'gdb)
 (global-set-key (kbd "C-, g") 'magit-status)
 (global-set-key (kbd "C-c k") 'compile)
+(global-set-key (kbd "C-, k") 'haskell-process-cabal-build)
 
 (setq c-default-style "linux")
 
@@ -29,3 +30,23 @@
 (setq auto-mode-alist
    (cons '("\.md" . markdown-mode) auto-mode-alist))
 
+(autoload 'haskell-mode "haskell-mode.el"
+   "Major mode for editing Haskell files" t)
+(setq auto-mode-alist
+   (cons '("\.hs" . haskell-mode) auto-mode-alist))
+
+(require 'package)
+(add-to-list 'package-archives
+   '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+(require 'package)
+(add-to-list 'package-archives
+   '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(autoload 'ghc-init "ghc" nil t)
+(autoload 'ghc-debug "ghc" nil t)
+(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+
+(custom-set-variables
+    '(haskell-mode-hook '(turn-on-haskell-indentation)))
