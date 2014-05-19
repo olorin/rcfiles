@@ -1,0 +1,18 @@
+Config { 
+        bgColor = "black"
+       , fgColor = "grey"
+       , position = TopW L 100
+       , font = "xft:Bitstream Vera Sans Mono:size=12:antialias=true"
+       , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%", "-H", "75", "--high", "red"] 10
+                    , Run Swap [] 10
+                    , Run Date "%a, %d %b | %H:%M:%S" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , hideOnStart = False
+       , lowerOnStart = False
+       , persistent = True
+       , template = "%StdinReader% } <fc=#0000ee>%temp%</fc> %batt% {  <fc=#ee9a00>%unread%</fc> | %cpu% | %memory% | <fc=#ee9a00>%date%</fc>"
+       }
