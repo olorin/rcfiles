@@ -1,0 +1,14 @@
+URxvt*transparent:true
+URxvt*fontSize:26
+URxvt*saveLines:25000
+URxvt*foreground:#ffffff
+URxvt*background:Black
+URxvt*shading:30
+URxvt*scrollBar:false
+URxvt*pixelSize:50
+URxvt*termName:xterm
+URxvt*loginShell:true
+URxvt.perl-ext-common:default,matcher
+URxvt.urlLauncher:/usr/bin/chromium
+URxvt.matcher.button:1
+URxvt.underlineURLs:true
