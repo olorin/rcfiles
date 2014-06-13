@@ -1,0 +1,18 @@
+[user]
+	name = Sharif Olorin
+	email = sio@tesser.org
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[push]
+	default = matching
+[core]
+	excludesfile = /home/sio/.gitignore
+[credential]
+	helper = cache
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	c = commit --signoff
+[github]
+	user = anchor
