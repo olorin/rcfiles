@@ -14,6 +14,7 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	c = commit --signoff
+	ca = commit -a --signoff
 	tg = tag -s -u 6B9FDF57
 [github]
 	user = anchor
