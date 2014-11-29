@@ -6,7 +6,7 @@
 [merge]
 	tool = vimdiff
 [push]
-	default = matching
+	default = simple
 [core]
 	excludesfile = /home/sio/.gitignore
 [credential]
