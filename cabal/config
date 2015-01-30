@@ -1,0 +1,18 @@
+remote-repo: hackage.syd1.anchor.net.au:http://hackage.syd1.anchor.net.au/packages/archive
+remote-repo-cache: /home/sio/.cabal/packages
+world-file: /home/sio/.cabal/world
+profiling: True
+extra-prog-path: /home/sio/.cabal/bin
+tests: True
+library-coverage: True
+benchmarks: True
+documentation: True
+build-summary: /home/sio/.cabal/logs/build.log
+remote-build-reporting: anonymous
+jobs: $ncpus
+
+haddock
+  hoogle: True
+  executables: True
+  tests: True
+  benchmarks: True
