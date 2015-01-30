@@ -4,7 +4,7 @@ world-file: /home/sio/.cabal/world
 profiling: True
 extra-prog-path: /home/sio/.cabal/bin
 tests: True
-library-coverage: True
+coverage: True
 benchmarks: True
 documentation: True
 build-summary: /home/sio/.cabal/logs/build.log
