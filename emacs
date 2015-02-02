@@ -4,9 +4,7 @@
      (color-theme-initialize)
      (color-theme-solarized-dark)))
 
-(scroll-bar-mode -1)
 (menu-bar-mode -1)
-(tool-bar-mode -1)
 (set-face-attribute 'default nil :height 140)
 
 (add-hook 'c-mode-common-hook '(lambda ()
@@ -19,9 +17,7 @@
 (global-set-key (kbd "C-, u") 'uncomment-region)
 (global-set-key (kbd "C-, b") 'compile)
 (global-set-key (kbd "C-, d") 'gdb)
-(global-set-key (kbd "C-, g") 'magit-status)
 (global-set-key (kbd "C-c k") 'compile)
-(global-set-key (kbd "C-, k") 'haskell-process-cabal-build)
 
 (setq c-default-style "linux")
 
@@ -40,13 +36,17 @@
    '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-(require 'package)
-(add-to-list 'package-archives
-   '("melpa" . "http://melpa.milkbox.net/packages/") t)
-
 (autoload 'ghc-init "ghc" nil t)
 (autoload 'ghc-debug "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 
 (custom-set-variables
     '(haskell-mode-hook '(turn-on-haskell-indentation)))
+
+(require 'org)
+
+;; Standard key bindings
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+(setq org-log-done t)
