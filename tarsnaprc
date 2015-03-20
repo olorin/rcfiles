@@ -1,0 +1,4 @@
+keyfile ~/.tarsnap/key
+cachedir ~/.tarsnap/cache
+exclude ~/.tarsnap/cache
+humanize-numbers
