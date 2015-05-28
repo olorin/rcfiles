@@ -15,6 +15,7 @@
 (global-set-key (kbd "C-, b") 'compile)
 (global-set-key (kbd "C-, d") 'gdb)
 (global-set-key (kbd "C-c k") 'compile)
+(global-set-key (kbd "C-c i") 'string-insert-rectangle)
 
 (setq c-default-style "linux")
 
