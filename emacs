@@ -17,7 +17,7 @@
 (global-set-key (kbd "C-c k") 'compile)
 (global-set-key (kbd "C-c i") 'string-insert-rectangle)
 
-(setq c-default-style "linux")
+
 
 (autoload 'markdown-mode "markdown-mode.el"
    "Major mode for editing Markdown files" t)
@@ -64,3 +64,23 @@
 
 (require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+; c
+(setq c-default-style "linux")
+
+(add-hook 'c-mode-hook
+          (lambda ()
+            (font-lock-mode 1)
+            (set-variable 'show-trailing-whitespace t)
+
+            (let ((fname (expand-file-name (buffer-file-name))))
+              (cond
+
+               ; tor
+               ((string-match "^/home/sio/src/tor" fname)
+                (set-variable 'indent-tabs-mode nil)
+                (set-variable 'c-basic-offset 2))
+            ))))
+
+(provide '.emacs)
+;;; .emacs ends here
