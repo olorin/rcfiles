@@ -3,7 +3,7 @@
 export EDITOR="mg"
 export HISTSIZE=999999
 
-PS1="λ "
+PS1="∃ "
 
 export PATH=/usr/bin/vendor_perl:$PATH
 export PATH=/usr/local/bin:$PATH
