@@ -1,0 +1,7 @@
+nitrogen --restore
+sh $HOME/.screenlayout/main.sh
+setxkbmap -option '+compose(prsc)'
+xmodmap $HOME/.keymap
+xautolock -time 5 -corners +000 -cornerdelay 1 -cornerredelay 10 &
+xmobar &
+exec xmonad
