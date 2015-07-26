@@ -8,7 +8,6 @@ PS1="∃ "
 export PATH=/usr/bin/vendor_perl:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.cabal/bin:$PATH
-export PATH=$HOME/var/hsutil/.cabal-sandbox/bin:$PATH
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 
