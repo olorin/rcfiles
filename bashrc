@@ -22,3 +22,6 @@ if [ -d ${HOME}/.bashcomplete ]; then
 		. $f
 	done
 fi
+
+eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+eval $(keychain --eval --agents ssh -Q --quiet id_ed25519)
