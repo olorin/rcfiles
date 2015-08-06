@@ -17,8 +17,8 @@ alias py="ipython --pylab"
 alias jp="python -m json.tool"
 alias lsgpg="gpg --list-keys --keyid-format=0xlong"
 
-if [ -d ${HOME}/.bashcomplete ]; then
-	for f in ${HOME}/.bashcomplete/* ; do
+if [ -d ${HOME}/.bashrc.d ]; then
+	for f in ${HOME}/.bashrc.d/* ; do
 		. $f
 	done
 fi
