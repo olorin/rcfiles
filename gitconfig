@@ -1,6 +1,7 @@
 [user]
 	name = Sharif Olorin
 	email = sio@tesser.org
+	signingKey = 0x47D4CE7F6B9FDF57
 [diff]
 	tool = vimdiff
 [merge]
@@ -19,3 +20,5 @@
 	a = add -uv
 [github]
 	user = anchor
+[commit]
+	gpgSign = 1
