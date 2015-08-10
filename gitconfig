@@ -18,7 +18,3 @@
 	ca = commit -a
 	tg = tag -s -u 6B9FDF57
 	a = add -uv
-[github]
-	user = anchor
-[commit]
-	gpgSign = 1
