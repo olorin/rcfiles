@@ -19,3 +19,4 @@
 	tg = tag -s -u 6B9FDF57
 	a = add -uv
 	fixup = commit --fixup HEAD
+	rima = rebase -i master --autosquash
