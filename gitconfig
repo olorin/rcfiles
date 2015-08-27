@@ -20,3 +20,5 @@
 	a = add -uv
 	fixup = commit --fixup HEAD
 	rima = rebase -i master --autosquash
+	pso = push --set-upstream origin
+	rc = rebase --continue
