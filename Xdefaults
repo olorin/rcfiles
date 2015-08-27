@@ -7,8 +7,7 @@ URxvt*scrollBar:false
 URxvt*pixelSize:50
 URxvt*termName:xterm
 URxvt*loginShell:true
-URxvt.font: xft:monospace
-!URxvt.font: -*-monospace-*-*-*-*-12-*-*-*-*-*-*
+URxvt.font: xft:Inconsolata:size=20
 URxvt.perl-ext: default,url-select
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/chromium
@@ -23,3 +22,4 @@ URxvt.perl-ext-common:  default,tabbedex
 URxvt.keysym.Control-t: perl:tabbedex:new_tab
 URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
 URxvt.keysym.Control-Alt-Tab: perl:tabbedex:prev_tab
+
