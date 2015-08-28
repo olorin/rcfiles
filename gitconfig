@@ -9,7 +9,7 @@
 [push]
 	default = simple
 [core]
-	excludesfile = /home/sio/.gitignore
+	excludesfile = /home/sio/.gitignore_global
 [credential]
 	helper = cache
 [alias]

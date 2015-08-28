@@ -13,5 +13,5 @@ Config {
        , hideOnStart = False
        , lowerOnStart = False
        , persistent = True
-       , template = "%StdinReader% } %batt% {  %cpu% | %memory% | <fc=#ee9a00>%date%</fc>"
+       , template = "%StdinReader% } {  %cpu% | %memory% | <fc=#ee9a00>%date%</fc>"
        }
