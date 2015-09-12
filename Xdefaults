@@ -7,7 +7,7 @@ URxvt*scrollBar:false
 URxvt*pixelSize:50
 URxvt*termName:xterm
 URxvt*loginShell:true
-URxvt.font: xft:Inconsolata:size=20
+URxvt.font: xft:Inconsolata:size=14
 URxvt.perl-ext: default,url-select
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/chromium

@@ -10,14 +10,16 @@
 				 (local-set-key (kbd "RET") 'newline-and-indent)))
 (setq column-number-mode t)
 
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/haskell-mode/")
+(require 'haskell-mode-autoloads)
+(add-to-list 'Info-default-directory-list "/usr/share/emacs/site-lisp/haskell-mode/")
+
 (global-set-key (kbd "C-, c") 'comment-region)
 (global-set-key (kbd "C-, u") 'uncomment-region)
 (global-set-key (kbd "C-, b") 'compile)
 (global-set-key (kbd "C-, d") 'gdb)
 (global-set-key (kbd "C-c k") 'compile)
 (global-set-key (kbd "C-c i") 'string-insert-rectangle)
-
-
 
 (autoload 'markdown-mode "markdown-mode.el"
    "Major mode for editing Markdown files" t)
@@ -52,19 +54,6 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-log-done t)
 
-(eval-after-load 'haskell-mode '(progn
-                                  (define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-or-reload)
-                                  (define-key haskell-mode-map (kbd "C-c C-o") 'haskell-compile)
-                                  (define-key haskell-mode-map (kbd "C-c C-z") 'haskell-interactive-switch)
-                                  (define-key haskell-mode-map (kbd "C-c C-n C-t") 'haskell-process-do-type)
-                                  (define-key haskell-mode-map (kbd "C-c C-n C-i") 'haskell-process-do-info)
-                                  (define-key haskell-mode-map (kbd "C-c C-n C-c") 'haskell-process-cabal-build)
-                                  (define-key haskell-mode-map (kbd "C-c C-n c") 'haskell-process-cabal)
-                                  (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)))
-
-(require 'flycheck)
-(add-hook 'after-init-hook #'global-flycheck-mode)
-
 ; c
 (setq c-default-style "linux")
 
@@ -81,6 +70,9 @@
                 (set-variable 'indent-tabs-mode nil)
                 (set-variable 'c-basic-offset 2))
             ))))
+
+; mail editing
+(add-to-list 'auto-mode-alist '("/sup.*eml$" . message-mode))
 
 (provide '.emacs)
 ;;; .emacs ends here
