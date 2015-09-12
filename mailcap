@@ -1,2 +1,2 @@
-image/*; feh -Z "%s"
+image/*; feh -FZ "%s"
 application/pdf; zathura "%s"
