@@ -75,6 +75,7 @@
 (add-to-list 'auto-mode-alist '("/sup.*eml$" . message-mode))
 
 (add-hook 'message-mode-hook (lambda ()
+  (search-forward-regexp "^$")
   (auto-fill-mode 1)))
 
 (provide '.emacs)
