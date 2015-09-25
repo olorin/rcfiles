@@ -19,7 +19,7 @@ alias lsgpg="gpg --list-keys --keyid-format=0xlong"
 alias sb="stack build --haddock --test --bench"
 
 if [ -d ${HOME}/.bashrc.d ]; then
-	for f in ${HOME}/.bashrc.d/* ; do
+	for f in ${HOME}/.bashrc.d/*.sh ; do
 		. $f
 	done
 fi
