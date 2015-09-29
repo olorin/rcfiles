@@ -26,6 +26,17 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+
+;
+; puppet
+;
+
+(autoload 'puppet-mode "puppet-mode.el"
+    "Major mode for editing Puppet files" t)
+(setq auto-mode-alist
+    (cons '("\.pp" . puppet-mode) auto-mode-alist))
+
 ;
 ; markdown
 ;
