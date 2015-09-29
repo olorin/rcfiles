@@ -94,6 +94,7 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-log-done t)
+(global-set-key (kbd "C-c t") 'org-todo)
 
 ;
 ; c
