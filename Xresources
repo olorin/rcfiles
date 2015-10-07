@@ -1,5 +1,5 @@
-URxvt*transparent:true
-URxvt*saveLines:25000
+URxvt*transparent:false
+URxvt*saveLines:100000
 URxvt*foreground:#ffffff
 URxvt*background:Black
 URxvt*shading:30
@@ -8,10 +8,6 @@ URxvt*pixelSize:50
 URxvt*termName:xterm
 URxvt*loginShell:true
 URxvt.font: xft:Inconsolata:size=14
-URxvt.perl-ext: default,url-select
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.launcher: /usr/bin/chromium
-URxvt.url-select.underline: true
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull
@@ -22,4 +18,9 @@ URxvt.perl-ext-common:  default,tabbedex
 URxvt.keysym.Control-t: perl:tabbedex:new_tab
 URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
 URxvt.keysym.Control-Alt-Tab: perl:tabbedex:prev_tab
+URxvt*scrollTtyOutput: false
+URxvt*scrollTtyKeypress: true
+URxvt*scrollWithBuffer: true
+URxvt*visualBell: false
+URxvt*cursorBlink: true
 
