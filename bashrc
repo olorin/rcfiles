@@ -1,7 +1,10 @@
 [ -z "$PS1" ] && return
 
-export EDITOR="mg"
-export HISTSIZE=999999
+export EDITOR="emacs"
+
+export HISTSIZE=-1
+export HISTCONTROL=ignorespace:ignoredups
+export HISTTIMEFORMAT="%Y-%m-%dT%H%M%SZ"
 
 PS1="∃ "
 
