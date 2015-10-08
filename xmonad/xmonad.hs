@@ -1,31 +1,22 @@
-import XMonad
-import XMonad.Hooks.DynamicLog
-import XMonad.Hooks.ManageHelpers
-import XMonad.Hooks.ManageDocks
-import XMonad.Util.Run(spawnPipe)
-import XMonad.Util.EZConfig(additionalKeys)
-import System.IO
+import           System.IO
+import           XMonad
+import           XMonad.Hooks.DynamicLog
+import           XMonad.Hooks.ManageDocks
+import           XMonad.Hooks.ManageHelpers
+import           XMonad.Util.EZConfig       (additionalKeys)
+import           XMonad.Util.Run            (spawnPipe)
 
-myFullScreenHook = composeOne [
-        isFullscreen -?> doFullFloat
-	]
+manage' = composeAll
+  [ manageDocks
+  , composeOne [ isFullscreen -?> doFullFloat ]
+  , manageHook defaultConfig
+  ]
 
-myManageHook = composeAll [
-        --     isFullscreen -?> doFullFloat,
-             manageDocks
-          ] <+> myFullScreenHook 
-
-
+main :: IO ()
 main = xmonad =<< xmobar defaultConfig
-	{ 
-	  focusFollowsMouse = True,
-	  terminal = "urxvt", 
-          modMask = mod4Mask,
-          manageHook = myManageHook <+> manageHook defaultConfig,
-          layoutHook = avoidStruts $ layoutHook defaultConfig
-
-	}
-
-
-
-	
+  { focusFollowsMouse = True
+  , terminal = "urxvt"
+  , modMask = mod4Mask
+  , manageHook = manage'
+  , layoutHook = avoidStruts $ layoutHook defaultConfig
+  }
