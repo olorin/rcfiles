@@ -22,5 +22,4 @@ URxvt*scrollTtyOutput: false
 URxvt*scrollTtyKeypress: true
 URxvt*scrollWithBuffer: true
 URxvt*visualBell: false
-URxvt*cursorBlink: true
-
+URxvt*cursorBlink: false
