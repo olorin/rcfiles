@@ -4,7 +4,7 @@ export EDITOR="emacs"
 
 export HISTSIZE=-1
 export HISTCONTROL=ignorespace:ignoredups
-export HISTTIMEFORMAT="%Y-%m-%dT%H%M%SZ"
+export HISTTIMEFORMAT="%Y-%m-%dT%H%M%SZ: "
 
 PS1="∃ "
 
