@@ -27,6 +27,12 @@ if [ -d ${HOME}/.bashrc.d ]; then
 	done
 fi
 
+if [ -d ${HOME}/.bash_completion.d ]; then
+	for f in ${HOME}/.bash_completion.d/*.bash ; do
+		. $f
+	done
+fi
+
 eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 eval $(keychain --eval --agents ssh -Q --quiet id_ed25519)
 

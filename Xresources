@@ -21,5 +21,5 @@ URxvt.keysym.Control-Alt-Tab: perl:tabbedex:prev_tab
 URxvt*scrollTtyOutput: false
 URxvt*scrollTtyKeypress: true
 URxvt*scrollWithBuffer: true
-URxvt*visualBell: true
+URxvt*visualBell: false
 URxvt*cursorBlink: false
