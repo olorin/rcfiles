@@ -1,5 +1,5 @@
 URxvt*transparent:false
-URxvt*saveLines:100000
+URxvt*saveLines:1000
 URxvt*foreground:#ffffff
 URxvt*background:Black
 URxvt*shading:30
