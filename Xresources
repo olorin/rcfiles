@@ -7,8 +7,8 @@ URxvt*scrollBar:false
 URxvt*pixelSize:50
 URxvt*termName:xterm
 URxvt*loginShell:true
-URxvt.font: xft:Inconsolata:size=14
-Xft.dpi: 180
+URxvt.font: xft:Inconsolata:size=26
+!Xft.dpi: 220
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull
