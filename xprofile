@@ -4,5 +4,6 @@ setxkbmap -option '+compose(prsc)'
 xmodmap $HOME/.keymap
 xrdb $HOME/.Xresources
 xautolock -locker "xlock -mode blank" -time 5 -corners +00- -cornerdelay 1 -cornerredelay 10 &
+xbindkeys
 xmobar &
 exec xmonad
