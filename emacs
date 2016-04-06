@@ -11,6 +11,7 @@
 (set-face-attribute 'default nil :height 140)
 
 (setq column-number-mode t)
+(setq require-final-newline 'visit)
 
 ;
 ; generic keybindings
