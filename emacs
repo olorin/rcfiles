@@ -32,26 +32,33 @@
 ; puppet
 ;
 
-(autoload 'puppet-mode "puppet-mode.el"
-    "Major mode for editing Puppet files" t)
-(setq auto-mode-alist
-    (cons '("\.pp" . puppet-mode) auto-mode-alist))
-
+; (autoload 'puppet-mode "puppet-mode.el"
+;     "Major mode for editing Puppet files" t)
+; (setq auto-mode-alist
+;     (cons '("\.pp" . puppet-mode) auto-mode-alist))
+; 
 ;
 ; markdown
 ;
 
-(autoload 'markdown-mode "markdown-mode.el"
-   "Major mode for editing Markdown files" t)
+; (autoload 'markdown-mode "markdown-mode.el"
+;    "Major mode for editing Markdown files" t)
+; (setq auto-mode-alist
+;    (cons '("\.md" . markdown-mode) auto-mode-alist))
+
+(autoload 'go-mode "go-mode.el"
+   "Major mode for editing Go files" t)
 (setq auto-mode-alist
-   (cons '("\.md" . markdown-mode) auto-mode-alist))
+   (cons '("\.go" . go-mode) auto-mode-alist))
+
 
 ;
 ; python
 ;
 
 (add-hook 'python-mode-hook '(lambda ()
-				 (local-set-key (kbd "RET") 'newline-and-indent)))
+				 (local-set-key (kbd "RET") 'newline-and-indent)
+                 (setq python-indent-offset 4)))
 
 ;
 ; haskell
@@ -71,11 +78,13 @@
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 
 (custom-set-variables
- '(haskell-mode-hook '(turn-on-haskell-simple-indent))
- '(haskell-process-type 'cabal-repl)
- '(haskell-process-suggest-remove-import-lines t)
+ '(haskell-mode-hook (quote (turn-on-haskell-simple-indent)) t)
  '(haskell-process-auto-import-loaded-modules t)
- '(haskell-process-log t))
+ '(haskell-process-log t)
+ '(haskell-process-suggest-remove-import-lines t)
+ '(haskell-process-type (quote cabal-repl))
+ '(org-default-notes-file "~/doc/notes/capture")
+ '(org-directory "~/doc/org"))
 
 ;
 ; scala

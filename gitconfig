@@ -24,3 +24,5 @@
 	rc = rebase --continue
 	undo = reset --soft HEAD~1
 	pl = pull --ff-only
+[commit]
+	gpgSign = 1
