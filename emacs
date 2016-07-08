@@ -9,6 +9,7 @@
 ;
 (menu-bar-mode -1)
 (set-face-attribute 'default nil :height 140)
+(set-variable 'show-trailing-whitespace t)
 
 (setq column-number-mode t)
 
@@ -22,8 +23,8 @@
 (global-set-key (kbd "C-c k") 'compile)
 (global-set-key (kbd "C-c i") 'string-insert-rectangle)
 
-; default to space-indenting
-(setq-default indent-tabs-mode nil)
+; default to tab-indenting
+(setq-default indent-tabs-mode t)
 (setq-default tab-width 4)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
@@ -32,10 +33,10 @@
 ; puppet
 ;
 
-; (autoload 'puppet-mode "puppet-mode.el"
-;     "Major mode for editing Puppet files" t)
-; (setq auto-mode-alist
-;     (cons '("\.pp" . puppet-mode) auto-mode-alist))
+(autoload 'puppet-mode "puppet-mode.el"
+    "Major mode for editing Puppet files" t)
+(setq auto-mode-alist
+    (cons '("\.pp" . puppet-mode) auto-mode-alist))
 ; 
 ;
 ; markdown
@@ -111,10 +112,15 @@
 
 (setq c-default-style "linux")
 
+
 (add-hook 'c-mode-hook
           (lambda ()
             (font-lock-mode 1)
-            (set-variable 'show-trailing-whitespace t)
+
+            (setq-default indent-tabs-mode t)
+            (setq tab-width 4)
+            (defvaralias 'c-basic-offset 'tab-width)
+            (defvaralias 'cperl-indent-level 'tab-width)
 
             (let ((fname (expand-file-name (buffer-file-name))))
               (cond
