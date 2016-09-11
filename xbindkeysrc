@@ -1,7 +1,16 @@
 #
+# lock
+#
+
+"mpc pause; xlock -mode blank"
+    F12
+
+#
 # audio
 #
 
+"mpc toggle"
+    F11
 
 "amixer set Master playback 5%+"
     XF86AudioRaiseVolume
@@ -9,7 +18,7 @@
 "amixer set Master playback 5%-"
     XF86AudioLowerVolume
 
-"amixer set Master toggle"
+"amixer set Master mute"
     XF86AudioMute
 
 #
@@ -17,14 +26,14 @@
 #
 
 "xbacklight -dec 10"
-  XF86MonBrightnessDown
+    XF86MonBrightnessDown
 
 "xbacklight -inc 10"
-  XF86MonBrightnessUp
+    XF86MonBrightnessUp
 
 "kbdlight up"
-  XF86KbdBrightnessUp
+    XF86KbdBrightnessUp
 
 "kbdlight down"
-  XF86KbdBrightnessDown
+    XF86KbdBrightnessDown
 
