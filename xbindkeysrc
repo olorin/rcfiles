@@ -12,6 +12,15 @@
 "mpc toggle"
     F11
 
+"mpc toggle"
+    XF86AudioPlay
+
+"mpc next"
+    XF86AudioNext
+
+"mpc prev"
+    XF86AudioPrev
+
 "amixer set Master playback 5%+"
     XF86AudioRaiseVolume
 
