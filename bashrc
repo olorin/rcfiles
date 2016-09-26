@@ -21,8 +21,8 @@ alias jp="python -m json.tool"
 alias lsgpg="gpg --list-keys --keyid-format=0xlong"
 alias sb="stack build --haddock --test --bench"
 
-if [ -d ${HOME}/.bashrc.d ]; then
-	for f in ${HOME}/.bashrc.d/*.sh ; do
+if [ -d ${HOME}/.bashrc.d/enabled ]; then
+	for f in ${HOME}/.bashrc.d/enabled/*.sh ; do
 		. $f
 	done
 fi
