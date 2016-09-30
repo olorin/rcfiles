@@ -1,3 +1,6 @@
+"scrot -d 2 -q 90 -e 'mv $f ~/img/screenshots/sort'"
+    Print
+
 #
 # lock
 #
