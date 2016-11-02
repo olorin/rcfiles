@@ -1,10 +1,9 @@
 URxvt*transparent:false
-URxvt*saveLines:1000
+URxvt*saveLines:10000
 URxvt*foreground:#ffffff
 URxvt*background:Black
 URxvt*shading:30
 URxvt*scrollBar:false
-URxvt*pixelSize:50
 URxvt*termName:xterm
 URxvt*loginShell:true
 URxvt.font: xft:Inconsolata:size=14
@@ -14,10 +13,6 @@ Xft.hintstyle:  hintfull
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
-URxvt.perl-ext-common:  default,tabbedex
-URxvt.keysym.Control-t: perl:tabbedex:new_tab
-URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
-URxvt.keysym.Control-Alt-Tab: perl:tabbedex:prev_tab
 URxvt*scrollTtyOutput: false
 URxvt*scrollTtyKeypress: true
 URxvt*scrollWithBuffer: true

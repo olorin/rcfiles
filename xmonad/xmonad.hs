@@ -1,5 +1,6 @@
 import           System.IO
 import           XMonad
+import           XMonad.Config.Desktop
 import           XMonad.Hooks.DynamicLog
 import           XMonad.Hooks.ManageDocks
 import           XMonad.Hooks.ManageHelpers
@@ -13,9 +14,9 @@ manage' = composeAll
   ]
 
 main :: IO ()
-main = xmonad =<< xmobar defaultConfig
+main = xmonad =<< xmobar desktopConfig
   { focusFollowsMouse = True
-  , terminal = "urxvt"
+  , terminal = "urxvtc -fade 10"
   , modMask = mod4Mask
   , manageHook = manage'
   , layoutHook = avoidStruts $ layoutHook defaultConfig
