@@ -1,13 +1,8 @@
 keycode 66 = Control_L
+keycode 37 = Delete
+keycode 105 = Delete
+keycode 119 = Delete
+clear Control
 clear Lock
 add Control = Control_L
 add Lock = Caps_Lock
-
-!!
-!! Macbook mappings - put L_Alt and Command/Super where they should be.
-!!
-
-!clear Mod1
-!clear Mod4
-!add Mod1 = Super_L
-!add Mod4 = Alt_L
