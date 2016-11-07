@@ -14,7 +14,7 @@ manage' = composeAll
   ]
 
 main :: IO ()
-main = xmonad =<< xmobar desktopConfig
+main = xmonad =<< xmobar defaultConfig
   { focusFollowsMouse = True
   , terminal = "urxvtc -fade 10"
   , modMask = mod4Mask
