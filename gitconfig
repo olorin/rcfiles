@@ -2,16 +2,22 @@
 	name = Sharif Olorin
 	email = sio@tesser.org
 	signingKey = 0x47D4CE7F6B9FDF57
+
 [diff]
 	tool = vimdiff
+
 [merge]
 	tool = vimdiff
+
 [push]
 	default = simple
+
 [core]
 	excludesfile = /home/sio/.gitignore_global
+
 [credential]
 	helper = cache
+
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset %G? -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	c = commit 
@@ -24,5 +30,7 @@
 	rc = rebase --continue
 	undo = reset --soft HEAD~1
 	pl = pull --ff-only
+        pf = push --force-with-lease
+
 [commit]
 	gpgSign = 1
