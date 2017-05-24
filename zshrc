@@ -9,9 +9,6 @@ zstyle :compinstall filename '/home/sio/.zshrc'
 autoload -Uz compinit
 compinit
 
-eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
-eval $(keychain --eval --agents ssh -Q --quiet id_ed25519)
-
 export GPG_TTY=$(tty)
 
 if [ -d ${HOME}/.zshrc.d/enabled ]; then
