@@ -31,6 +31,7 @@
     undo = reset --soft HEAD~1
     pl = pull --ff-only
     pf = push --force-with-lease
+    shallow = git clone --shallow-submodules --depth 1
 
 [commit]
     gpgSign = 1
