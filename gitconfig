@@ -33,4 +33,4 @@
         pf = push --force-with-lease
 
 [commit]
-	gpgSign = 1
+	gpgSign = 0
