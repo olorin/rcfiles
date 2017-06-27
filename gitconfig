@@ -1,36 +1,37 @@
 [user]
-	name = Sharif Olorin
-	email = sio@tesser.org
-	signingKey = 0x47D4CE7F6B9FDF57
+    name = Sharif Olorin
+    email = sio@tesser.org
+    signingKey = 0x47D4CE7F6B9FDF57
 
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 
 [push]
-	default = simple
+    default = simple
 
 [core]
-	excludesfile = /home/sio/.gitignore_global
+    excludesfile = /home/sio/.gitignore_global
 
 [credential]
-	helper = cache
+    helper = cache
 
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset %G? -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-	c = commit 
-	ca = commit -a
-	tg = tag -s -u 6B9FDF57
-	a = add -uv
-	fixup = commit --fixup HEAD
-	rima = rebase -i master --autosquash --autostash
-	pso = push --set-upstream origin
-	rc = rebase --continue
-	undo = reset --soft HEAD~1
-	pl = pull --ff-only
-        pf = push --force-with-lease
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset %G? -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    c = commit
+    ca = commit -a
+    tg = tag -s -u 6B9FDF57
+    a = add -uv
+    fixup = commit --fixup HEAD
+    rima = rebase -i master --autosquash --autostash
+    pso = push --set-upstream origin
+    rc = rebase --continue
+    undo = reset --soft HEAD~1
+    pl = pull --ff-only
+    pf = push --force-with-lease
+    shallow = git clone --shallow-submodules --depth 1
 
 [commit]
-	gpgSign = 0
+    gpgSign = 1

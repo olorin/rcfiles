@@ -18,3 +18,6 @@ URxvt*scrollTtyKeypress: true
 URxvt*scrollWithBuffer: true
 URxvt*visualBell: false
 URxvt*cursorBlink: false
+URxvt.perl-ext-common: font-size
+URxvt.keysym.C-Page_Up: font-size:increase
+URxvt.keysym.C-Page_Down: font-size:decrease
