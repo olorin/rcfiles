@@ -19,7 +19,7 @@
     helper = cache
 
 [alias]
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset %G? -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --pretty=format:'%Cred%h %Cgreen%m%aI %G? %C(bold blue)<%ae> %Creset%s%C(yellow) %d ' --abbrev-commit
     c = commit
     ca = commit -a
     tg = tag -s -u 6B9FDF57
@@ -31,7 +31,9 @@
     undo = reset --soft HEAD~1
     pl = pull --ff-only
     pf = push --force-with-lease
-    shallow = git clone --shallow-submodules --depth 1
+    shallow = clone --shallow-submodules --depth 1
+    b = rev-parse --abbref-ref HEAD
+    s = status --porcelain=1 --branch
 
 [commit]
-    gpgSign = 1
+    gpgSign = 0
