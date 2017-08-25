@@ -19,7 +19,7 @@
     helper = cache
 
 [alias]
-    lg = log --pretty=format:'%Cred%h %Cgreen%m%aI %G? %C(bold blue)<%ae> %Creset%s%C(yellow) %d ' --abbrev-commit
+    lg = log --pretty=format:'%Cred%h %Cgreen%aI %C(yellow)%G? %C(bold blue)<%ae> %Creset%s%C(yellow)%d' --abbrev-commit
     c = commit
     ca = commit -a
     tg = tag -s -u 6B9FDF57
