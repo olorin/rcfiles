@@ -19,7 +19,7 @@ fi
 
 
 PROMPT_SUBST=true
-PROMPT='%(0?.%F{green}.%F{red})∃%f '
+PROMPT='%(0?.%F{green}.%F{red})>%f '
 export EDITOR=emacs
 
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
