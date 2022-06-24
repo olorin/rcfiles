@@ -1,8 +1,11 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000000
 SAVEHIST=1000000
-setopt appendhistory extendedglob notify
-unsetopt beep
+
+setopt SHARE_HISTORY
+setopt EXTENDED_GLOB
+setopt NOTIFY
+unsetopt BEEP
 bindkey -e
 zstyle :compinstall filename '/home/sio/.zshrc'
 
