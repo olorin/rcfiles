@@ -37,15 +37,14 @@
 # backlight
 #
 
-"xbacklight -dec 10"
+"xbacklight -dec 1"
     XF86MonBrightnessDown
 
-"xbacklight -inc 10"
+"xbacklight -inc 1"
     XF86MonBrightnessUp
 
-"kbdlight up"
-    XF86KbdBrightnessUp
-
-"kbdlight down"
+"xbacklight -dec 10"
     XF86KbdBrightnessDown
 
+"xbacklight -inc 10"
+    XF86KbdBrightnessUp
