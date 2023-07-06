@@ -7,6 +7,9 @@ xautolock -locker "xsecurelock" -time 5 -corners +00- -cornerdelay 1 -cornerrede
 xbindkeys
 xinput --set-prop --type=int --format=8 "Primax Kensington Eagle Trackball" "libinput Middle Emulation Enabled" "1"
 xinput --set-button-map "Primax Kensington Eagle Trackball" 1 3 2
+xset s 3600 3600
+xset -dpms
+xset b off
 urxvtd -f
 xmobar &
 exec xmonad
