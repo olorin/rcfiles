@@ -3,7 +3,7 @@ sh $HOME/.screenlayout/main.sh
 setxkbmap -option '+compose(prsc)'
 xmodmap $HOME/.keymap
 xrdb $HOME/.Xresources
-xautolock -locker "xlock -mode blank" -time 5 -corners +00- -cornerdelay 1 -cornerredelay 10 &
+xautolock -locker "xsecurelock" -time 5 -corners +00- -cornerdelay 1 -cornerredelay 10 &
 xbindkeys
 xinput --set-prop --type=int --format=8 "Primax Kensington Eagle Trackball" "libinput Middle Emulation Enabled" "1"
 xinput --set-button-map "Primax Kensington Eagle Trackball" 1 3 2
