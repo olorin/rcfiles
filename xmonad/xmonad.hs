@@ -17,7 +17,7 @@ manage' = composeAll
 main :: IO ()
 main = xmonad =<< xmobar defaultConfig
   { focusFollowsMouse = True
-  , terminal = "urxvtc -fade 10"
+  , terminal = "urxvtc"
   , modMask = mod4Mask
   , manageHook = manage'
   , layoutHook = avoidStruts . layoutHook . ewmh $ defaultConfig
